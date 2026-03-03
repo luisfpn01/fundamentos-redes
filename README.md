@@ -73,22 +73,19 @@
     Em resumo, como o meu ip está dentro da faixa de endereçamento privado, minha máquina não está diretamente exposta à internet, entretanto, pode se comunicar com outros dispositivos dentro da LAN.
 
 ### 2. Teste de Conectividade
-    Comando:   ping 8.8.8.8
+Comando:   ping 8.8.8.8
 
-## O que observei:
+    Disparando 8.8.8.8 com 32 bytes de dados:
+    Resposta de 8.8.8.8: bytes=32 tempo=19ms TTL=115
+    Resposta de 8.8.8.8: bytes=32 tempo=17ms TTL=115
+    Resposta de 8.8.8.8: bytes=32 tempo=13ms TTL=115
+    Resposta de 8.8.8.8: bytes=32 tempo=15ms TTL=115
 
-Disparando 8.8.8.8 com 32 bytes de dados:
-Resposta de 8.8.8.8: bytes=32 tempo=19ms TTL=115
-Resposta de 8.8.8.8: bytes=32 tempo=17ms TTL=115
-Resposta de 8.8.8.8: bytes=32 tempo=13ms TTL=115
-Resposta de 8.8.8.8: bytes=32 tempo=15ms TTL=115
-
-Estatísticas do Ping para 8.8.8.8:
-    Pacotes: Enviados = 4, Recebidos = 4, Perdidos = 0 (0% de
-             perda),
-Aproximar um número redondo de vezes em milissegundos:
+    Estatísticas do Ping para 8.8.8.8:
+        Pacotes: Enviados = 4, Recebidos = 4, Perdidos = 0 (0% de perda),
+    Aproximar um número redondo de vezes em milissegundos:
     Mínimo = 13ms, Máximo = 19ms, Média = 16ms
-
+    
 - Tempo de resposta: Média de 16ms
 - TTL: Média de 115
 
