@@ -49,12 +49,11 @@
 
 ## 1. Descobrindo IP da máquina
     Comando utilizado:  ipconfig
-
-### Resultado:
-   Endereço IPv6 de link local . . . . . . . . : fe80::8fc8:e9b5:2730:e43e%9
-   Endereço IPv4. . . . . . . .  . . . . . . . : 192.168.0.100
-   Máscara de Sub-rede . . . . . . . . . . . . : 255.255.255.0
-   Gateway Padrão. . . . . . . . . . . . . . . : 192.168.0.1
+    
+        Endereço IPv6 de link local . . . . . . . . : fe80::8fc8:e9b5:2730:e43e%9
+        Endereço IPv4. . . . . . . .  . . . . . . . : 192.168.0.100
+        Máscara de Sub-rede . . . . . . . . . . . . : 255.255.255.0
+        Gateway Padrão. . . . . . . . . . . . . . . : 192.168.0.1
 
 ### Explicação:
     Endereço IPv4 (Internet Protocol version 4) é o protocolo que identifica cada dispositivo dentro de uma rede.
