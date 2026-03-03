@@ -45,20 +45,20 @@
 ## O que quero aprofundar:
     Pretendo me aprofundar em protocolos, para entender melhor como as redes funcionam.
 
-### Parte Prática - Testes no Windows ###
+# Parte Prática - Testes no Windows
 
 ## 1. Descobrindo IP da máquina
     Comando utilizado:  ipconfig
 
-## Resultado:
+### Resultado:
    Endereço IPv6 de link local . . . . . . . . : fe80::8fc8:e9b5:2730:e43e%9
    Endereço IPv4. . . . . . . .  . . . . . . . : 192.168.0.100
    Máscara de Sub-rede . . . . . . . . . . . . : 255.255.255.0
    Gateway Padrão. . . . . . . . . . . . . . . : 192.168.0.1
 
-## Explicação:
-    Endereço IPv4 (Internet Protocol version 4) é o protocolo que identifica cada dispositivo dentro de uma rede. Ele faz o endereçamento dos dispositivos utilizando uma numeração em 32 bits, representado em quatro números separados por "ponto", divididos em 4 octetos (8 bits cada). Cada dispositivo na rede deve ter seu IP distinto para transmitir e receber dados.
-    
+### Explicação:
+    Endereço IPv4 (Internet Protocol version 4) é o protocolo que identifica cada dispositivo dentro de uma rede.
+    Ele faz o endereçamento dos dispositivos utilizando uma numeração em 32 bits, representado em quatro números separados por "ponto", divididos em 4 octetos (8 bits cada). Cada dispositivo na rede deve ter seu IP distinto para transmitir e receber dados.
     Trabalha na Camada 3 do Modelo OSI;
     Responsável por Endereçamento, Roteamento (Direcionar pacotes entre redes diferentes) e Entrega de pacotes entre redes;
 
@@ -70,10 +70,12 @@
                 172.16.0.0 – 172.31.255.255
                 192.168.0.0 – 192.168.255.255
             
-    Em resumo, como o meu ip está dentro da faixa de endereçamento privado, minha máquina não está diretamente exposta à internet, entretanto, pode se comunicar com outros dispositivos dentro da LAN.
+    Em resumo, como o meu ip está dentro da faixa de endereçamento privado, 
+    minha máquina não está diretamente exposta à internet, 
+    entretanto, pode se comunicar com outros dispositivos dentro da LAN.
 
-### 2. Teste de Conectividade
-Comando:   ping 8.8.8.8
+## 2. Teste de Conectividade
+    Comando:   ping 8.8.8.8
 
     Disparando 8.8.8.8 com 32 bytes de dados:
     Resposta de 8.8.8.8: bytes=32 tempo=19ms TTL=115
@@ -82,14 +84,14 @@ Comando:   ping 8.8.8.8
     Resposta de 8.8.8.8: bytes=32 tempo=15ms TTL=115
 
     Estatísticas do Ping para 8.8.8.8:
-        Pacotes: Enviados = 4, Recebidos = 4, Perdidos = 0 (0% de perda),
+    Pacotes: Enviados = 4, Recebidos = 4, Perdidos = 0 (0% de perda),
     Aproximar um número redondo de vezes em milissegundos:
     Mínimo = 13ms, Máximo = 19ms, Média = 16ms
-    
-- Tempo de resposta: Média de 16ms
-- TTL: Média de 115
 
-## Análise:
+    -  Tempo de resposta: Média de 16ms
+    -  TTL: 115
+
+### Análise:
     O ICMP (Internet Control Message Protocol) é um protocolo usado para enviar mensagens de controle e diagnóstico de rede, ele não serve para transportar dados utilizáveis e sim para informar se o destino está acessível, se o pacote chegou ao destino e quanto tempo demorou para resposta chegar.
         O ICMP funciona na Camada 3 do OSI junto com o IPv4 (Ele depende do IP para funcionar).
         Tipos de Mensagens ICMP:
@@ -98,9 +100,9 @@ Comando:   ping 8.8.8.8
             Destination Unreachable
             Time Exceeded (usado no tracert)
 
-    O ping funciona e recebo resposta porque:
+    O ping funciona e tenho resposta porquê:
         Cabo de Rede está conectado;
         Tenho um endereço MAC;
-        Conexão com o roteador que me fornece um endereço IPv4;
+        Conexão com o roteador me fornece um endereço IPv4;
         Portas configuradas;
         Rota à internet;
