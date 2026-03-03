@@ -30,11 +30,10 @@
         Autentica as respostas do DNS, prevenindo manipulações externas.
 
     HTTPS (Hypertext Transfer Protocol Secure)
-        A versão segura do HTTP (protocolo de navegação, Tim Berners-Lee), usando TLS (Transport Layer Security. É um protocolo criptográfico que garante segurança, privacidade e integridade dos dados.) para garantir que os dados não sejam interceptados.
+        A versão segura do HTTP (protocolo de navegação, Tim Berners-Lee), usando TLS (Transport Layer Security). É um protocolo criptográfico que garante segurança, privacidade e integridade dos dados.) para garantir que os dados não sejam interceptados.
 
     SNMPv3 (Simple Network Management Protocol)
+        Baseado em níveis de segurança.
         É a versão mais seura do protocolo de gerenciamento de rede, oferece autenticação de usuário, criptografia de dados e integridade de mensagens (SHA/MD5 e DES/AES)
             Autenticação por meio de SHA e MD5
             Criptografia de dados com DES e AES
-        Baseado em níveis de segurança.
-
