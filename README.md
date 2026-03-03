@@ -48,16 +48,15 @@
 ### Parte Prática - Testes no Windows ###
 
 ## 1. Descobrindo IP da máquina
-Comando utilizado:
-    ipconfig
+    Comando utilizado:  ipconfig
 
-Resultado:
+## Resultado:
    Endereço IPv6 de link local . . . . . . . . : fe80::8fc8:e9b5:2730:e43e%9
    Endereço IPv4. . . . . . . .  . . . . . . . : 192.168.0.100
    Máscara de Sub-rede . . . . . . . . . . . . : 255.255.255.0
    Gateway Padrão. . . . . . . . . . . . . . . : 192.168.0.1
 
-Explicação:
+## Explicação:
     Endereço IPv4 (Internet Protocol version 4) é o protocolo que identifica cada dispositivo dentro de uma rede. Ele faz o endereçamento dos dispositivos utilizando uma numeração em 32 bits, representado em quatro números separados por "ponto", divididos em 4 octetos (8 bits cada). Cada dispositivo na rede deve ter seu IP distinto para transmitir e receber dados.
     
     Trabalha na Camada 3 do Modelo OSI;
@@ -74,10 +73,9 @@ Explicação:
     Em resumo, como o meu ip está dentro da faixa de endereçamento privado, minha máquina não está diretamente exposta à internet, entretanto, pode se comunicar com outros dispositivos dentro da LAN.
 
 ### 2. Teste de Conectividade
-Comando:
-ping 8.8.8.8
+    Comando:   ping 8.8.8.8
 
-O que observei:
+## O que observei:
 
 Disparando 8.8.8.8 com 32 bytes de dados:
 Resposta de 8.8.8.8: bytes=32 tempo=19ms TTL=115
@@ -94,7 +92,7 @@ Aproximar um número redondo de vezes em milissegundos:
 - Tempo de resposta: Média de 16ms
 - TTL: Média de 115
 
-Análise:
+## Análise:
     O ICMP (Internet Control Message Protocol) é um protocolo usado para enviar mensagens de controle e diagnóstico de rede, ele não serve para transportar dados utilizáveis e sim para informar se o destino está acessível, se o pacote chegou ao destino e quanto tempo demorou para resposta chegar.
         O ICMP funciona na Camada 3 do OSI junto com o IPv4 (Ele depende do IP para funcionar).
         Tipos de Mensagens ICMP:
@@ -103,7 +101,7 @@ Análise:
             Destination Unreachable
             Time Exceeded (usado no tracert)
 
-    O ping funciona e manda resposta porque:
+    O ping funciona e recebo resposta porque:
         Cabo de Rede está conectado;
         Tenho um endereço MAC;
         Conexão com o roteador que me fornece um endereço IPv4;
